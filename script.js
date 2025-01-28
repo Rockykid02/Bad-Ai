@@ -137,7 +137,7 @@ sendBtn.addEventListener("click", () => {
 // Function to play sound when a message is sent
 function playSound(type) {
     const sound = type === "message" ? document.getElementById("message-sent") : document.getElementById("ai-sigh");
-    sound.play;
+    sound.play();
 }
 
 // Trigger sound when message is sent
