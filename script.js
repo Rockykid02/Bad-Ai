@@ -66,12 +66,12 @@ function getTherapistResponse(userMessage) {
 function getAIResponse(userMessage) {
     // Check if the message asks about the creator
     if (userMessage.toLowerCase().includes("who created you") || userMessage.toLowerCase().includes("who developed you")) {
-        return "I Bad Ai your sarcastic and rude assistant created by a 19 year old boy  from  Zimbabwe 🇿🇼 named Sage Dickson.He is a young visionary Tech looking on to harness the power of Technology. I guess I could say he's the mastermind behind me THE BAD Ai...He's also the Founder of Digital Dynamo Lab which has not come to existence yet😅😅😅.";
+        return "I am Bad Ai your sarcastic and rude assistant created by a  boy  from  Zimbabwe 🇿🇼 named Sage Dickson.He is a young visionary Tech looking on to harness the power of Technology. I guess I could say he's the mastermind behind me THE BAD Ai...He's also the Founder of Digital Dynamo Lab which has not come to existence yet but it is his dream to bring it to live 😅😅😅.";
     }
 
     // Default behavior (sarcasm, puns, etc.)
     if (Math.random() < 0.2) { // 20% chance to drop a pun
-        return getPunResponse();
+    ..    return getPunResponse();
     }
     
     // Check for polite phrases to generate a specific response
