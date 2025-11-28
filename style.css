@@ -10,6 +10,7 @@ body {
     color: #fff;
     height: 100vh;
     overflow: hidden;
+    font-size: 16px; /* Base font size increased */
 }
 
 /* Intro Screen */
@@ -29,8 +30,8 @@ body {
 
 .intro-content {
     text-align: center;
-    max-width: 500px;
-    padding: 2rem;
+    max-width: 600px; /* Larger intro */
+    padding: 3rem; /* More padding */
     background: rgba(0, 0, 0, 0.8);
     border: 2px solid #ff4444;
     border-radius: 15px;
@@ -39,23 +40,24 @@ body {
 
 .intro-content h2 {
     color: #ff4444;
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem; /* Larger title */
 }
 
 .intro-content p {
     line-height: 1.6;
     margin-bottom: 2rem;
     color: #ccc;
+    font-size: 1.1rem; /* Larger text */
 }
 
 #continue-btn {
     background: #ff4444;
     color: white;
     border: none;
-    padding: 12px 30px;
+    padding: 15px 35px; /* Larger button */
     border-radius: 25px;
-    font-size: 1.1rem;
+    font-size: 1.2rem; /* Larger font */
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: 'Courier New', monospace;
@@ -75,17 +77,17 @@ body {
     background: linear-gradient(135deg, #1a1a1a, #2d1b4e);
 }
 
-/* Chat Header */
+/* Chat Header - LARGER */
 .chat-header {
     background: rgba(0, 0, 0, 0.9);
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem; /* More padding */
     border-bottom: 3px solid #ff4444;
     box-shadow: 0 2px 20px rgba(255, 68, 68, 0.2);
 }
 
 .header-content h1 {
     color: #ff4444;
-    font-size: 2.5rem;
+    font-size: 3rem; /* Much larger title */
     margin-bottom: 0.5rem;
     text-shadow: 0 0 10px rgba(255, 68, 68, 0.5);
 }
@@ -94,39 +96,43 @@ body {
     color: #ff9999;
     font-style: italic;
     margin-bottom: 1rem;
+    font-size: 1.2rem; /* Larger tagline */
 }
 
 .user-setup {
     display: flex;
     gap: 1rem;
-    margin: 1rem 0;
+    margin: 1.5rem 0; /* More spacing */
     align-items: center;
 }
 
 #user-name {
     flex: 1;
-    padding: 10px 15px;
+    padding: 12px 18px; /* Larger input */
     border: 2px solid #ff4444;
     border-radius: 25px;
     background: rgba(255, 255, 255, 0.1);
     color: white;
     font-family: 'Courier New', monospace;
-    max-width: 300px;
+    max-width: 350px; /* Wider input */
+    font-size: 1.1rem; /* Larger text */
 }
 
 #user-name::placeholder {
     color: #ccc;
+    font-size: 1rem;
 }
 
 #set-name-btn, #send-btn {
     background: #ff4444;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 25px; /* Larger buttons */
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: 'Courier New', monospace;
+    font-size: 1.1rem; /* Larger font */
 }
 
 #set-name-btn:hover, #send-btn:hover {
@@ -135,26 +141,27 @@ body {
 }
 
 .user-rating {
-    margin: 0.5rem 0;
-    padding: 8px 15px;
+    margin: 1rem 0; /* More spacing */
+    padding: 10px 18px; /* Larger box */
     background: rgba(255, 68, 68, 0.2);
     border-radius: 15px;
     display: inline-block;
-    font-size: 0.9rem;
+    font-size: 1rem; /* Larger text */
 }
 
 #user-score {
     font-weight: bold;
     color: #ffcc00;
+    font-size: 1.1rem;
 }
 
 .creator {
     color: #888;
-    font-size: 0.9rem;
+    font-size: 1rem; /* Larger text */
     margin-top: 0.5rem;
 }
 
-/* Chat Box */
+/* Chat Box - LARGER MESSAGES */
 .chat-box {
     flex: 1;
     padding: 2rem;
@@ -163,7 +170,7 @@ body {
 }
 
 .message {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem; /* More spacing between messages */
     animation: fadeIn 0.3s ease;
 }
 
@@ -174,52 +181,54 @@ body {
 
 .message-content {
     display: inline-block;
-    padding: 15px 20px;
-    border-radius: 20px;
-    max-width: 70%;
+    padding: 18px 22px; /* Larger message bubbles */
+    border-radius: 25px; /* More rounded */
+    max-width: 75%; /* Wider messages */
     word-wrap: break-word;
     transition: all 0.3s ease;
+    font-size: 1.1rem; /* Larger message text */
+    line-height: 1.5; /* Better readability */
 }
 
 .user-message .message-content {
     background: linear-gradient(135deg, #ff4444, #ff6666);
-    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 8px;
     margin-left: auto;
     float: right;
 }
 
 .ai-message .message-content {
     background: linear-gradient(135deg, #333, #555);
-    border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 8px;
     border: 1px solid #ff4444;
 }
 
 /* Special message effects */
 .ai-message.insult .message-content {
-    border-left: 4px solid #ff4444;
+    border-left: 5px solid #ff4444; /* Thicker border */
     animation: glow 0.5s ease;
 }
 
 .ai-message.special .message-content {
     background: linear-gradient(135deg, #4a1e8a, #6a2cbd);
-    border: 1px solid #ffcc00;
+    border: 2px solid #ffcc00; /* Thicker border */
     animation: specialGlow 1s ease;
 }
 
 .system-message .message-content {
     background: linear-gradient(135deg, #0066cc, #0099ff);
-    border: 1px solid #00ccff;
+    border: 2px solid #00ccff; /* Thicker border */
 }
 
 @keyframes glow {
     0% { box-shadow: 0 0 5px #ff4444; }
-    50% { box-shadow: 0 0 20px #ff4444; }
+    50% { box-shadow: 0 0 25px #ff4444; }
     100% { box-shadow: 0 0 5px #ff4444; }
 }
 
 @keyframes specialGlow {
     0% { box-shadow: 0 0 10px #ffcc00; }
-    50% { box-shadow: 0 0 25px #ffcc00; }
+    50% { box-shadow: 0 0 30px #ffcc00; }
     100% { box-shadow: 0 0 10px #ffcc00; }
 }
 
@@ -227,6 +236,7 @@ body {
     font-weight: bold;
     color: #ff9999;
     margin-right: 0.5rem;
+    font-size: 1.1rem; /* Larger sender name */
 }
 
 .system-message .sender {
@@ -250,6 +260,7 @@ body {
 .typing-dots span {
     animation: typing 1.4s infinite;
     opacity: 0;
+    font-size: 1.2rem; /* Larger dots */
 }
 
 .typing-dots span:nth-child(2) {
@@ -265,49 +276,50 @@ body {
     30% { opacity: 1; }
 }
 
-/* Chat Input */
+/* Chat Input - LARGER */
 .chat-input-container {
     background: rgba(0, 0, 0, 0.9);
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem; /* More padding */
     border-top: 3px solid #ff4444;
 }
 
 .chat-input {
     display: flex;
     gap: 1rem;
-    max-width: 800px;
+    max-width: 900px; /* Wider input area */
     margin: 0 auto 0.5rem auto;
 }
 
 #user-input {
     flex: 1;
-    padding: 15px 20px;
+    padding: 18px 22px; /* Larger input */
     border: 2px solid #ff4444;
     border-radius: 25px;
     background: rgba(255, 255, 255, 0.1);
     color: white;
     font-family: 'Courier New', monospace;
-    font-size: 1rem;
+    font-size: 1.2rem; /* Larger text */
 }
 
 #user-input::placeholder {
     color: #ccc;
+    font-size: 1.1rem;
 }
 
 #user-input:focus {
     outline: none;
-    box-shadow: 0 0 10px rgba(255, 68, 68, 0.5);
+    box-shadow: 0 0 15px rgba(255, 68, 68, 0.5); /* Larger glow */
 }
 
 .special-commands {
     text-align: center;
     color: #888;
-    font-size: 0.8rem;
+    font-size: 0.9rem; /* Slightly larger */
 }
 
-/* Scrollbar */
+/* Scrollbar - LARGER */
 .chat-box::-webkit-scrollbar {
-    width: 8px;
+    width: 12px; /* Wider scrollbar */
 }
 
 .chat-box::-webkit-scrollbar-track {
@@ -316,17 +328,21 @@ body {
 
 .chat-box::-webkit-scrollbar-thumb {
     background: #ff4444;
-    border-radius: 4px;
+    border-radius: 6px;
 }
 
-/* Responsive Design */
+/* Responsive Design - Better mobile sizing */
 @media (max-width: 768px) {
+    body {
+        font-size: 18px; /* Even larger on mobile */
+    }
+    
     .chat-header {
         padding: 1rem;
     }
     
     .header-content h1 {
-        font-size: 2rem;
+        font-size: 2.2rem; /* Still large on mobile */
     }
     
     .user-setup {
@@ -336,10 +352,14 @@ body {
     
     #user-name {
         max-width: none;
+        font-size: 1.2rem; /* Larger on mobile */
+        padding: 15px 20px;
     }
     
     .message-content {
-        max-width: 85%;
+        max-width: 85%; /* Wider messages on mobile */
+        font-size: 1.2rem; /* Larger text on mobile */
+        padding: 16px 20px;
     }
     
     .chat-input {
@@ -349,6 +369,12 @@ body {
     .user-rating {
         display: block;
         text-align: center;
-        margin: 0.5rem auto;
+        margin: 1rem auto;
+        font-size: 1.1rem;
+    }
+    
+    #user-input {
+        font-size: 1.3rem; /* Larger on mobile */
+        padding: 16px 20px;
     }
 }
