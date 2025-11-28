@@ -10,7 +10,6 @@ body {
     color: #fff;
     height: 100vh;
     overflow: hidden;
-    font-size: 16px;
 }
 
 /* Intro Screen */
@@ -30,8 +29,8 @@ body {
 
 .intro-content {
     text-align: center;
-    max-width: 600px;
-    padding: 3rem;
+    max-width: 500px;
+    padding: 2rem;
     background: rgba(0, 0, 0, 0.8);
     border: 2px solid #ff4444;
     border-radius: 15px;
@@ -40,24 +39,23 @@ body {
 
 .intro-content h2 {
     color: #ff4444;
-    margin-bottom: 1.5rem;
-    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
 }
 
 .intro-content p {
     line-height: 1.6;
     margin-bottom: 2rem;
     color: #ccc;
-    font-size: 1.1rem;
 }
 
 #continue-btn {
     background: #ff4444;
     color: white;
     border: none;
-    padding: 15px 35px;
+    padding: 12px 30px;
     border-radius: 25px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: 'Courier New', monospace;
@@ -80,14 +78,14 @@ body {
 /* Chat Header */
 .chat-header {
     background: rgba(0, 0, 0, 0.9);
-    padding: 1.5rem 2rem;
+    padding: 1rem 2rem;
     border-bottom: 3px solid #ff4444;
     box-shadow: 0 2px 20px rgba(255, 68, 68, 0.2);
 }
 
 .header-content h1 {
     color: #ff4444;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 0.5rem;
     text-shadow: 0 0 10px rgba(255, 68, 68, 0.5);
 }
@@ -96,43 +94,39 @@ body {
     color: #ff9999;
     font-style: italic;
     margin-bottom: 1rem;
-    font-size: 1.2rem;
 }
 
 .user-setup {
     display: flex;
     gap: 1rem;
-    margin: 1.5rem 0;
+    margin: 1rem 0;
     align-items: center;
 }
 
 #user-name {
     flex: 1;
-    padding: 12px 18px;
+    padding: 10px 15px;
     border: 2px solid #ff4444;
     border-radius: 25px;
     background: rgba(255, 255, 255, 0.1);
     color: white;
     font-family: 'Courier New', monospace;
-    max-width: 350px;
-    font-size: 1.1rem;
+    max-width: 300px;
 }
 
 #user-name::placeholder {
     color: #ccc;
-    font-size: 1rem;
 }
 
 #set-name-btn, #send-btn {
     background: #ff4444;
     color: white;
     border: none;
-    padding: 12px 25px;
+    padding: 10px 20px;
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: 'Courier New', monospace;
-    font-size: 1.1rem;
 }
 
 #set-name-btn:hover, #send-btn:hover {
@@ -141,37 +135,35 @@ body {
 }
 
 .user-rating {
-    margin: 1rem 0;
-    padding: 10px 18px;
+    margin: 0.5rem 0;
+    padding: 8px 15px;
     background: rgba(255, 68, 68, 0.2);
     border-radius: 15px;
     display: inline-block;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 #user-score {
     font-weight: bold;
     color: #ffcc00;
-    font-size: 1.1rem;
 }
 
 .creator {
     color: #888;
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-top: 0.5rem;
 }
 
-/* Chat Box - MUCH LARGER MESSAGES */
+/* Chat Box - Perfectly Sized Messages */
 .chat-box {
     flex: 1;
-    padding: 2rem;
+    padding: 1.5rem;
     overflow-y: auto;
     background: rgba(0, 0, 0, 0.3);
-    min-height: 60vh;
 }
 
 .message {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     animation: fadeIn 0.3s ease;
 }
 
@@ -182,69 +174,63 @@ body {
 
 .message-content {
     display: inline-block;
-    padding: 20px 25px;
-    border-radius: 25px;
-    max-width: 80%;
+    padding: 16px 20px;
+    border-radius: 20px;
+    max-width: 75%;
     word-wrap: break-word;
-    transition: all 0.3s ease;
-    font-size: 1.3rem;
-    line-height: 1.6;
-    min-height: 60px;
-    display: flex;
-    align-items: center;
+    font-size: 1.1rem;
+    line-height: 1.4;
 }
 
 .user-message .message-content {
     background: linear-gradient(135deg, #ff4444, #ff6666);
-    border-bottom-right-radius: 8px;
+    border-bottom-right-radius: 5px;
     margin-left: auto;
     float: right;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .ai-message .message-content {
     background: linear-gradient(135deg, #333, #555);
-    border-bottom-left-radius: 8px;
-    border: 2px solid #ff4444;
-    font-size: 1.3rem;
+    border-bottom-left-radius: 5px;
+    border: 1px solid #ff4444;
+    font-size: 1.1rem;
 }
 
 /* Special message effects */
 .ai-message.insult .message-content {
-    border-left: 6px solid #ff4444;
+    border-left: 4px solid #ff4444;
     animation: glow 0.5s ease;
-    font-size: 1.3rem;
 }
 
 .ai-message.special .message-content {
     background: linear-gradient(135deg, #4a1e8a, #6a2cbd);
-    border: 3px solid #ffcc00;
+    border: 1px solid #ffcc00;
     animation: specialGlow 1s ease;
-    font-size: 1.3rem;
 }
 
 .system-message .message-content {
     background: linear-gradient(135deg, #0066cc, #0099ff);
-    border: 2px solid #00ccff;
+    border: 1px solid #00ccff;
 }
 
 @keyframes glow {
     0% { box-shadow: 0 0 5px #ff4444; }
-    50% { box-shadow: 0 0 25px #ff4444; }
+    50% { box-shadow: 0 0 20px #ff4444; }
     100% { box-shadow: 0 0 5px #ff4444; }
 }
 
 @keyframes specialGlow {
     0% { box-shadow: 0 0 10px #ffcc00; }
-    50% { box-shadow: 0 0 30px #ffcc00; }
+    50% { box-shadow: 0 0 25px #ffcc00; }
     100% { box-shadow: 0 0 10px #ffcc00; }
 }
 
 .sender {
     font-weight: bold;
     color: #ff9999;
-    margin-right: 10px;
-    font-size: 1.2rem;
+    margin-right: 0.5rem;
+    font-size: 1rem;
 }
 
 .system-message .sender {
@@ -256,7 +242,7 @@ body {
 }
 
 .text {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 /* Typing Indicator */
@@ -272,8 +258,6 @@ body {
 .typing-dots span {
     animation: typing 1.4s infinite;
     opacity: 0;
-    font-size: 1.4rem;
-    margin: 0 2px;
 }
 
 .typing-dots span:nth-child(2) {
@@ -292,47 +276,46 @@ body {
 /* Chat Input */
 .chat-input-container {
     background: rgba(0, 0, 0, 0.9);
-    padding: 1.5rem 2rem;
+    padding: 1rem 2rem;
     border-top: 3px solid #ff4444;
 }
 
 .chat-input {
     display: flex;
     gap: 1rem;
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto 0.5rem auto;
 }
 
 #user-input {
     flex: 1;
-    padding: 18px 22px;
+    padding: 15px 20px;
     border: 2px solid #ff4444;
     border-radius: 25px;
     background: rgba(255, 255, 255, 0.1);
     color: white;
     font-family: 'Courier New', monospace;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 #user-input::placeholder {
     color: #ccc;
-    font-size: 1.1rem;
 }
 
 #user-input:focus {
     outline: none;
-    box-shadow: 0 0 15px rgba(255, 68, 68, 0.5);
+    box-shadow: 0 0 10px rgba(255, 68, 68, 0.5);
 }
 
 .special-commands {
     text-align: center;
     color: #888;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 /* Scrollbar */
 .chat-box::-webkit-scrollbar {
-    width: 12px;
+    width: 8px;
 }
 
 .chat-box::-webkit-scrollbar-track {
@@ -341,21 +324,17 @@ body {
 
 .chat-box::-webkit-scrollbar-thumb {
     background: #ff4444;
-    border-radius: 6px;
+    border-radius: 4px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    body {
-        font-size: 18px;
-    }
-    
     .chat-header {
         padding: 1rem;
     }
     
     .header-content h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
     
     .user-setup {
@@ -365,32 +344,21 @@ body {
     
     #user-name {
         max-width: none;
-        font-size: 1.2rem;
-        padding: 15px 20px;
-    }
-    
-    .chat-box {
-        padding: 1.5rem;
     }
     
     .message-content {
-        max-width: 90%;
-        font-size: 1.4rem;
-        padding: 18px 22px;
-        min-height: 55px;
+        max-width: 85%;
+        font-size: 1.2rem;
+        padding: 14px 18px;
     }
     
     .user-message .message-content,
     .ai-message .message-content {
-        font-size: 1.4rem;
-    }
-    
-    .sender {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     
     .text {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     
     .chat-input {
@@ -400,16 +368,6 @@ body {
     .user-rating {
         display: block;
         text-align: center;
-        margin: 1rem auto;
-        font-size: 1.1rem;
-    }
-    
-    #user-input {
-        font-size: 1.3rem;
-        padding: 16px 20px;
-    }
-    
-    .typing-dots span {
-        font-size: 1.5rem;
+        margin: 0.5rem auto;
     }
 }
